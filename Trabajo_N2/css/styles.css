@@ -1,0 +1,484 @@
+/*
+    1. Posicionamiento.
+    2. Modelo de caja.
+    3. Tipografía.
+    4. Visualización.
+    5. Otros.
+*/
+
+:root {
+
+    --white: #ffffff;
+    --Texto: #F7F7F7;
+    --pink: #c7c7c7;
+    --Green: #acd9ba;
+    --Oscuro: #232830;
+    --Black: #000000;
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 640px) {
+    .logo {
+      display: block;
+    }
+
+} 
+
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* PAG LOGIN  */
+
+.icons img.logo {
+    width: 80%;
+    height: 70px; 
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.mail-zone p{
+    padding-top: 5px;
+    margin-left: 26%;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    color: var(--Black);
+}
+
+.mail-zone a{
+    position: relative;
+    display: block;
+    top: 5px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 20px;
+    background-color: var(--Texto);
+    border: none;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--pink);
+}
+
+.login-zone a.login-buttom{
+    position: relative;
+    display: block;
+    top: 25px;
+    margin-left: 27.5%;
+    margin-bottom: 20px;
+    width: 45%;
+    height: 60px;
+    padding-top: 20px;
+    background: var(--Green);
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--white); 
+    
+
+}
+
+.login-zone a.sing-up-buttom{
+    width: 45%;
+    height: 60px;
+    top: 50px;
+    padding-top: 20px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    position: relative;
+    display: block;
+    margin-left: 27.5%;
+    margin-bottom: 80px;
+    background: transparent;
+    text-align: center;
+    border: solid;
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--Green);
+}
+.login-zone p {
+    width: 40%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 30%;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 1.6rem;
+    color: var(--Green);
+}
+
+.header-icons-container.login{
+    width: 250px;
+    height: 50px;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+/* PAG PASSWORD RECOVERY */
+.text-password-recovery p{
+    padding-top: 1px;
+    margin-left: 40%;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    color: var(--Black);
+}
+.text-password-recovery h1{
+    width: 28%;
+    padding-top: 12px;
+    margin-left: 35%;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 400;
+    color: var(--pink);
+}
+
+
+.password-recovery img{
+    height: 60px;
+    margin-left: 35%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.email-zone-container a{
+    position: relative;
+    display: block;
+    top: 5px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 20px;
+    background-color: var(--Texto);
+    border: none;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--pink);
+}
+.email-zone-container p{
+    padding-top: 5px;
+    margin-left: 26%;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    color: var(--Black);
+}
+.login-zone-container a.Submit-buttom {
+    position: relative;
+    display: block;
+    top: 25px;
+    margin-left: 27.5%;
+    margin-bottom: 20px;
+    width: 45%;
+    height: 60px;
+    padding-top: 20px;
+    background: var(--Green);
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.login-zone-container p{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 1.6rem;
+    color: var(--Green);
+}
+
+/* PAG NEW ACCOUNT */
+.new-account img.menu{
+    width:60%;
+    height: 30px;
+    margin-left: 2px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background-size: cover; 
+    background-position: center; 
+    
+}
+.new-account img.logo{
+    width: 100%;
+    height: 40px;
+    margin-left: 2px;
+    margin-top: -100px;
+    margin-bottom: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.new-account img.carrito{
+    width: 135%;
+    height: 50px;
+    margin-left: 2px;
+    margin-top: -100px;
+    margin-bottom: 5px;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+} 
+
+/* 
+.new-account img{
+    position: relative;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border: 2px;
+    margin-top: 50px;
+    width: 300px;
+
+
+} */
+.name-usuario p{
+    padding-top: 10px;
+    margin-left: 26%;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.3rem;
+    color: var(--Black);
+}
+.name-usuario a{
+    position: relative;
+    display: block;
+    top: 5px;
+    margin-left: 26%;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 20px;
+    background-color: var(--Texto);
+    border: none;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--pink);
+}
+.sing-zone a{
+    width: 45%;
+    height: 60px;
+    top: 130px;
+    padding-top: 20px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    position: relative;
+    display: block;
+    margin-left: 28%;
+    margin-bottom: 200px;
+    background: var(--Green);
+    text-align: center;
+    border: solid;
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--white);
+}
+.login-container h1{
+    padding-top: 35px;
+    margin-left: 27%;
+    margin-bottom: 35px;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    color: var(--Black);
+}
+
+/* PAG HOME */
+img.menu{
+    height: 30px;
+    margin-left: 28%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}   
+img.logo{
+    height: 30px;
+    margin-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+img.carrito{
+    height: 30px;
+    margin-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.buttom-busqueda{
+    position: relative;
+    display: block;
+    top: 5px;
+    margin-left: 23%;
+    margin-bottom: 20px;
+    width: 50%;
+    height: 60px;
+    padding-left: 10px;
+    padding-top: 20px;
+    background-color: var(--Texto);
+    border: none;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--pink);
+}
+
+
+.item .all{
+    width: 8%;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 2%;
+    margin-left: 25%;
+}
+
+.item .clothes{
+    width: 8%;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+.item .electronic{
+    width: 8%;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+.item .furniture{
+    width: 8%;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+.item .toy{
+    width: 8%;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+.order-button {
+    width: 95%;
+    height: 25px;
+    margin-top: 20px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.order-button b{
+    margin-right:5px;
+    color: var(--Black);
+    font-weight: bold;
+}
+
+.order-button p{
+    font-weight: normal;    
+    color: var(--Very-light-pink);
+}
+
+.order-button span{
+    display:inline-block;
+    width: 13px;
+    height: 10px;
+    margin-left: 10px;
+    background-image: url('/Trabajo_N2/assets/icons/flecha3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.articulos{
+    border: 1px solid transparent;   
+    display: flex;
+}
+.scroll-articulos.items{
+    display:flex;
+    width: 100%;
+    height:  700px;    
+    margin-right: 10px;
+    margin-left: 10px; 
+}
+.items{
+    width: 35%;
+    height: 80px;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    margin-left: 12%;
+    display: inline-block;
+}
+
+.items .nombre{
+    color: var(--Very-light-pink);
+    padding-top: 5px;
+    font-weight: 1.4rem;
+    font-size: 1.4rem;
+}
+.items .precio{
+    margin-top: -40px;
+    color: var(--Black);
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.items img.carrito{
+    width: 40px;
+    height: 40%;
+    margin-left: 60%;
+}
+.items img{
+    width: 70%;
+    border-radius: 20px;
+}
+
+
+
+
